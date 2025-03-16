@@ -20,21 +20,31 @@ li{
 }
 .page-wrapper {
     background: black;
+    min-height: 100vh;
 }
 .header {
     position: relative;
     margin: 0 auto;
+    background: url(/img/header-bg.jpg) no-repeat center/cover;
+    padding-top: 40px;
+    padding-bottom: 133px; 
 }
 .header-overlay-logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -200px;
+    left: -165px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    width: 400px;
+    height: 400px;
     border-radius: 100%;
     fill: linear-gradient(136deg, #c4c4c4 0%, rgba(196, 196, 196, 0) 100%);
     backdrop-filter: blur(30px);
+}
+.header-logo{
+    margin-right: 55px;
+    margin-top: 167px;
 }
 .header-photo {
 }
@@ -51,10 +61,49 @@ li{
     column-gap: 30px;
 }
 .header-search-ticket {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 0px 10px 30px;
 }
 .header-search-select {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 0px 10px 30px;
+}
+input::placeholder{
+    color:var(--gray);
 }
 .main {
+    padding-left: 175px;
+    padding-right: 175px;
 }
 .footer {
+}
+
+.main-card {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6px;
+}
+.main-card-poster {
+    /* height: 227px; */
+    width: 100%;
+    object-fit: cover;
+}
+.main-card-title {
+    color: car(--pink);
+    font-size: 700;
+    font-size: 16px;
+}
+.main-card-date {
+    color: white;
+}
+.main-card-place {
+    color: white;
 }
