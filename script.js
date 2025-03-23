@@ -49,3 +49,4 @@ const searcInput = document.querySelector(".header-search-ticket");
 searcInput.addEventListener("input", _.debounce(() => {
     searcPost()
 }, 500));
+
