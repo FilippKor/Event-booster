@@ -22,7 +22,7 @@ const getEventApi = async (keyword) => {
 // api - end
 
 // show card - start
-const list = document.querySelector(".main__list");
+const list = document.querySelector(".main");
 
  function createMarkup(arr) {
     console.log(arr)
@@ -44,7 +44,7 @@ function searcPost() {
         createMarkup(data._embedded)
     });
 }
-const searcInput = document.querySelector(".header__input-searc");
+const searcInput = document.querySelector(".header-search-ticket");
 
 searcInput.addEventListener("input", _.debounce(() => {
     searcPost()
