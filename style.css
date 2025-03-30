@@ -146,4 +146,31 @@ input::placeholder{
 }
 .modal{
     background: #FFF2FD;
+    border-radius: 25px;
+}
+
+.modal-container-poster {
+}
+.modal-container-info {
+    
+}
+.modal-container-info-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container-info-subsitude {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container-info-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
