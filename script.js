@@ -1,3 +1,5 @@
+
+
 const getEventApi = async (keyword) => {
     if (keyword === "" || keyword === undefined || keyword === null){
         try {
@@ -50,3 +52,26 @@ searcInput.addEventListener("input", _.debounce(() => {
     searcPost()
 }, 500));
 
+let overlay = document.querySelector(".overlay")
+let modalClose = document.querySelector(".modal-close") 
+function fadeOutEffect() {
+    var fadeTarget = document.querySelector(".overlay")
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.3;
+            
+        } else {
+            fadeTarget.style.display="none"
+            clearInterval(fadeEffect);
+        }
+        
+    }, 100);
+   
+}
+modalClose.addEventListener("click", function () {
+    fadeOutEffect();
+
+})

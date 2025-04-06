@@ -150,15 +150,25 @@ input::placeholder{
 }
 
 .modal-container-poster {
+    height: 580px;
 }
 .modal-container-info {
     width: 25vw;
 }
 .modal-container-info-title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--pink);
 }
 .modal-container-info-subsitude {
+    font-size: 1.05rem;
+    font-size: 200;
+    color: black;
+    display: flex;
+    column-gap: 13px;
 }
-.modal-container-info-buy {
+.modal-container-info-buy:first-child {
+    margin-top: 0;
 }
 .modal-more {
 }
@@ -192,6 +202,9 @@ input::placeholder{
     overflow-y: scroll;
     padding: 63px 30px;
     height: 550px;
+    border-top-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    scrollbar-width: none;
 }
 .modal-logo{
     border-radius: 50%;
@@ -204,4 +217,23 @@ input::placeholder{
     display: flex;
     justify-content: center;
     column-gap: 60px;
+}
+.modal-container-info-buy{
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: var(--violet);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.standart-btn{
+    margin-bottom: 30px;
+}
+
+.modal-more{
+    margin-top: 45px;
+    padding: 10px 45px;
+    border: 1px solid  var(--violet);
+    cursor: pointer;
+    border-radius: 5px;
 }
